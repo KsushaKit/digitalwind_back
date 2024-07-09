@@ -22,17 +22,6 @@ class CreateTables extends Migration
             $table->timestamps();
         });
 
-        Schema::create('events', function (Blueprint $table) {
-            $table->id();
-            $table->string('title');
-            $table->text('text');
-            $table->string('img');
-            $table->date('date');
-            $table->integer('max_members');
-            $table->integer('current_members');
-            $table->timestamps();
-        });
-
         Schema::create('age_groups', function (Blueprint $table) {
             $table->id();
             $table->string('title');
